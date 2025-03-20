@@ -4,11 +4,11 @@ require_once 'SaveImages.php';
 
 class App
 {
-  public $pathImages = '';
-  public $saveDir = '';
-  public $logLevel = '';
+  public $pathImages;
+  public $saveDir;
+  public $logLevel;
 
-  function __construct($pathImages, $saveDir, $logLevel)
+  public function __construct($pathImages, $saveDir, $logLevel)
   {
     $this->pathImages = $pathImages;
     $this->saveDir = $saveDir;

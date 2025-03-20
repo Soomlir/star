@@ -1,7 +1,7 @@
 <?php
 class SaveImages
 {
-  public $pathImages = '';
+  public $pathImages;
   public static $imagesUrl = [];
   public $logger;
 
@@ -11,7 +11,7 @@ class SaveImages
     $this->logger = $logger;
   }
 
-  static function saveImg($pathImages, $saveDir, Logger $logger)
+  public static function saveImg($pathImages, $saveDir, Logger $logger)
   {
     $pathSaveDir = __DIR__ . DIRECTORY_SEPARATOR . $saveDir;
     $logger->logWrite('Начало процесса сохранения изображений', 'info');

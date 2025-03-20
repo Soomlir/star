@@ -1,14 +1,14 @@
 <?php
 class FileHelper 
 {
-  public $saveDir = '';
+  public $saveDir;
 
-  function __construct($saveDir) 
+  public function __construct($saveDir) 
   {
     $this->saveDir = $saveDir;
   }
 
-  static function createDir($saveDir) 
+  public static function createDir($saveDir) 
   {
     if (!is_dir($saveDir)) {
       mkdir($saveDir, 0777, true);

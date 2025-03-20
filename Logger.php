@@ -1,10 +1,10 @@
 <?php
 class Logger
 {
-  public $logLevel = '';
-  public $logPath = './logs/log.txt';
+  public $logLevel;
+  public $logPath;
 
-  function __construct($logLevel, $logPath = './logs/log.txt')
+  public function __construct($logLevel, $logPath = './logs/log.txt')
   {
     $this->logLevel = $logLevel;
     $this->logPath = $logPath;
